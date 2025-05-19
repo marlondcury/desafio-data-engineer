@@ -1,14 +1,17 @@
-# 📊 Análise do E-commerce Brasileiro (Olist)
+# Análise do E-commerce Brasileiro (Olist)
 
 Este projeto explora o dataset da Olist, um marketplace brasileiro, com o objetivo de extrair insights relevantes sobre o comportamento de clientes, vendas, entregas, pagamentos e avaliações.
 
-## 📁 Dataset
+## Projeto:
+[Projeto](Brazilian_E_CommerceFinal.ipynb)
+
+##  Dataset
 
 O dataset é composto por múltiplos arquivos CSV que representam diferentes aspectos do processo de venda online, como pedidos, itens, pagamentos, avaliações, localização geográfica, entre outros.
 
 Fonte: [Kaggle - Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 
-## ▶️ Como Executar
+##  Como Executar
 
 1. Instale os pacotes necessários:
     ```bash
@@ -19,7 +22,7 @@ Fonte: [Kaggle - Brazilian E-Commerce Public Dataset by Olist](https://www.kaggl
 
 3. Os dados são automaticamente baixados com o `kagglehub`.
 
-## 🧠 Metodologia
+##  Metodologia
 
 O notebook está estruturado da seguinte forma:
 
@@ -32,21 +35,21 @@ O notebook está estruturado da seguinte forma:
 4. **Visualizações interativas com Plotly e estáticas com Seaborn/Matplotlib**
 5. **Soluções para problemas de negócio com técnicas de machine learning e clustering**
 
-## 🎯 Principais Resultados
+##  Principais Resultados
 
 - A categoria mais vendida foi `cama_mesa_banho` e `beleza_saude`.
 - A média de tempo de entrega é de aproximadamente 12 dias, com picos em regiões mais afastadas.
 - Clientes que recebem pedidos mais rápido tendem a dar notas maiores nas avaliações.
 - A geolocalização revelou padrões de concentração de vendedores e compradores no Sudeste.
 
-## 📌 Decisões Técnicas
+## Decisões Técnicas
 
 - A função `inspect_dataframe()` foi criada para padronizar a inspeção dos DataFrames.
 - Foram priorizadas visualizações de fácil interpretação, usando `plotly.express` para interatividade.
 
-## 💼 Solução de Problemas de Negócio (25 pontos)
+##  Solução de Problemas de Negócio (25 pontos)
 
-### 📈 1. Análise de Retenção
+###  1. Análise de Retenção
 - **Critério de cliente recorrente:** clientes que fizeram **mais de um pedido** no período analisado.
 - **Taxa de recorrência:** aproximadamente **3%** dos clientes retornaram para uma segunda compra.
 - **Insights:**
@@ -54,7 +57,7 @@ O notebook está estruturado da seguinte forma:
   - Estratégias de fidelização podem focar nos estados e categorias com maior taxa de recompra.
   - Incentivos como frete grátis ou cupons podem aumentar o retorno.
 
-### ⏰ 2. Predição de Atraso na Entrega
+###  2. Predição de Atraso na Entrega
 - **Definição de atraso:** `order_delivered_customer_date > order_estimated_delivery_date`.
 - **Features utilizadas:**
   - Tempo de processamento
@@ -63,18 +66,18 @@ O notebook está estruturado da seguinte forma:
 - **Resultado:** Acurácia de 90%, F1-score de 0.90 para ambas as classes
 - **Conclusão:** O modelo pode prever atrasos com boa confiança e servir como ferramenta de suporte para logística.
 
-### 👥 3. Segmentação de Clientes
+###  3. Segmentação de Clientes
 - **Técnica:** K-Means Clustering
 - **Variáveis:** ticket médio, frequência de compra, tempo médio de entrega, avaliação média
 
 - **Ações:** campanhas personalizadas, ofertas e melhorias logísticas.
 
-### 😊 4. Análise de Satisfação
+###  4. Análise de Satisfação
 - **Fatores analisados:** categoria do produto, tempo de entrega, valor da compra
 - **Principais achados:**
   - Tempo de entrega é o maior fator de insatisfação.
 
-## 📊 Visualizações e Dashboards 
+##  Visualizações e Dashboards 
 
  **Dashboard Geral**
 
@@ -82,5 +85,6 @@ O notebook está estruturado da seguinte forma:
 **Avaliação vs Tempo de Entrega**
 
 **Dashboard de Vendedores**
+
 
 ---
